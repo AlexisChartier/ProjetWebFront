@@ -3,6 +3,8 @@
   "author": "teleportHQ",
   "version": "0.0.0",
   "scripts": {
+    "start": "npm install",
+    "build": "npm run build"
   },
   "private": true,
   "dependencies": {
