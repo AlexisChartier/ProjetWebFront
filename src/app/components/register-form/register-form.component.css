@@ -1,0 +1,34 @@
+:host {
+  display: contents;
+}
+.register-form-register-form {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.register-form-form {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  max-width: fit-content;
+  min-width: auto;
+  align-self: center;
+  max-height: fit-content;
+  min-height: auto;
+  align-items: center;
+  margin-left: 150px;
+  padding-top: var(--dl-space-space-threeunits);
+  margin-right: 150px;
+  padding-left: var(--dl-space-space-sevenunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-sevenunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-color: var(--dl-color-gray-white);
+}

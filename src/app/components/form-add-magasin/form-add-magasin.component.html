@@ -1,0 +1,33 @@
+<div class="form-add-magasin-form-add-magasin">
+  <form [formGroup]="addMagasinForm" class="form-add-magasin-form">
+    <input
+      formControlName="nomMagasin"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="adresse"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="Description"
+      type="text"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      type="file"
+      [attr.placeholder]="textinput_placeholder3"
+      class="input"
+    />
+    <div (click)="onClick()" class="form-add-magasin-get-started">
+      <span class="form-add-magasin-text">
+        <span>Ajouter Magasin</span>
+        <br />
+      </span>
+    </div>
+  </form>
+</div>

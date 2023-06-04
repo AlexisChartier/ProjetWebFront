@@ -1,0 +1,28 @@
+:host { 
+  display: contents; 
+}
+.add-prod-btn-vend-add-prod-btn-vend {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.add-prod-btn-vend-add-prod-btn-vend:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.add-prod-btn-vend-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}

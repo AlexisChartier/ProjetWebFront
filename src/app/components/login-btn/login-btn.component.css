@@ -1,0 +1,30 @@
+:host { 
+  display: contents; 
+}
+.login-btn-get-started {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.login-btn-get-started:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.login-btn-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login-btn-root-class-name {
+  margin-bottom: var(--dl-space-space-twounits);
+}

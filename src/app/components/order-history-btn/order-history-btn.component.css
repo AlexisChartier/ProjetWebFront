@@ -1,0 +1,28 @@
+:host { 
+  display: contents; 
+}
+.order-history-btn-order-history-btn {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.order-history-btn-order-history-btn:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.order-history-btn-navlink {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}

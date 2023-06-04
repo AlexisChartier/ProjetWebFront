@@ -1,0 +1,42 @@
+<div class="register-form-register-form">
+  <form [formGroup]="registerForm" class="register-form-form">
+    <input
+      formControlName="nom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="prenom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="motdepasse"
+      type="password"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      formControlName="confmdp"
+      type="password"
+      [attr.placeholder]="textinput_placeholder3"
+      class="input"
+    />
+    <input
+      formControlName="adresse"
+      type="text"
+      [attr.placeholder]="textinput_placeholder4"
+      class="input"
+    />
+    <input
+      formControlName="email"
+      type="email"
+      [attr.placeholder]="textinput_placeholder5"
+      class="input"
+    />
+    <button class="button" type="button" (click)="onSubmitClient()" >{{ buttonC }}</button>
+    <button class="button" type="button" (click)="onSubmitLivreur()">{{ buttonL }}</button>
+  </form>
+</div>

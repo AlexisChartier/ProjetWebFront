@@ -1,0 +1,43 @@
+<div class="form-add-client-form-add-client">
+  <form [formGroup]="addClientForm" class="form-add-client-form">
+    <input
+      formControlName="nom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="prenom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="motdepasse"
+      type="password"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      formControlName="confmdp"
+      type="password"
+      [attr.placeholder]="textinput_placeholder3"
+      class="input"
+    />
+    <input
+      formControlName="adresse"
+      type="text"
+      [attr.placeholder]="textinput_placeholder4"
+      class="input"
+    />
+    <input
+      formControlName="email"
+      type="email"
+      [attr.placeholder]="textinput_placeholder5"
+      class="input"
+    />
+    <div (click)="onClick()" class="form-add-client-get-started">
+      <span class="form-add-client-text">{{ text }}</span>
+    </div>
+  </form>
+</div>

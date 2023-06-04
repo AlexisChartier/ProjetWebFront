@@ -1,0 +1,40 @@
+<div class="edit-produit1-edit-produit">
+  <form [formGroup]="EditProduitForm" class="edit-produit1-form">
+    <input
+      formControlName="nomProduit"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="Description"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="Prix"
+      type="text"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      formControlName="idMagasin"
+      type="text"
+      [attr.placeholder]="textinput_placeholder4"
+      class="input"
+    />
+    <input
+      type="file"
+      [attr.placeholder]="textinput_placeholder3"
+      class="input"
+    />
+    <label>{{ text }}</label>
+    <div (click)="onClick()" class="edit-produit1-get-started">
+      <span class="edit-produit1-text1">
+        <span>Modifier</span>
+        <br />
+      </span>
+    </div>
+  </form>
+</div>

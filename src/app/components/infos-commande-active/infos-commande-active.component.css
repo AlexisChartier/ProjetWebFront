@@ -1,0 +1,187 @@
+:host { 
+  display: contents; 
+}
+.infos-commande-active-infos-commande-active {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-sevenunits);
+  margin-bottom: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-sevenunits);
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-gray-white);
+}
+.infos-commande-active-information {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.infos-commande-active-group13923 {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-shrink: 1;
+  flex-direction: column;
+}
+.infos-commande-active-text {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.infos-commande-active-text03 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.infos-commande-active-text04 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.infos-commande-active-container {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.infos-commande-active-text05 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.infos-commande-active-etat {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.infos-commande-active-group139231 {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-shrink: 1;
+  flex-direction: column;
+}
+.infos-commande-active-text06 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.infos-commande-active-container1 {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.infos-commande-active-text09 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .infos-commande-active-infos-commande-active {
+    padding-top: var(--dl-space-space-twounits);
+    flex-direction: column;
+  }
+  .infos-commande-active-group13923 {
+    flex: 1;
+    align-self: center;
+    align-items: center;
+    padding-bottom: 21px;
+    justify-content: center;
+  }
+  .infos-commande-active-group139231 {
+    flex: 1;
+    align-self: center;
+    align-items: center;
+    padding-bottom: 21px;
+    justify-content: center;
+  }
+}
+@media(max-width: 767px) {
+  .infos-commande-active-infos-commande-active {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .infos-commande-active-group13923 {
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .infos-commande-active-group139231 {
+    padding-bottom: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .infos-commande-active-infos-commande-active {
+    padding-top: 43px;
+  }
+}

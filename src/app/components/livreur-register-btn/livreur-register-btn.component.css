@@ -1,0 +1,53 @@
+:host { 
+  display: contents; 
+}
+.livreur-register-btn-livreur-register-btn {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.livreur-register-btn-container {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.livreur-register-btn-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.livreur-register-btn-get-started {
+  flex: 1;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-self: center;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.livreur-register-btn-get-started:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.livreur-register-btn-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}

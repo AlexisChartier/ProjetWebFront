@@ -1,0 +1,25 @@
+<div *ngFor="let produit of produits" class="infos-prod-vendeur-infos-prod-vendeur">
+  <img
+    [attr.src]="image_src"
+    [attr.alt]="image_alt"
+    class="infos-prod-vendeur-image"
+  />
+  <div class="infos-prod-vendeur-group13923">
+    <span class="infos-prod-vendeur-text">
+      <span>{{produit.nom_produit}}</span>
+      <br />
+    </span>
+    <span class="infos-prod-vendeur-text3">{{ produit.description_produit }}</span>
+  </div>
+  <div class="infos-prod-vendeur-container">
+    <span class="infos-prod-vendeur-text4">{{ produit.prix_produit }}</span>
+    <div (click)="onClickSuppr(produit.produit_id)" class="infos-prod-vendeur-get-started">
+      <span class="infos-prod-vendeur-text5">{{ text2 }}</span>
+    </div>
+    <a routerLink="/edit-produit" class="infos-prod-vendeur-navlink">
+      <div (click)="onClickEdit(produit.produit_id)" class="infos-prod-vendeur-get-started1">
+        <span class="infos-prod-vendeur-text6">{{ text3 }}</span>
+      </div>
+    </a>
+  </div>
+</div>

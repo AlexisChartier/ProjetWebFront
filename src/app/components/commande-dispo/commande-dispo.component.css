@@ -1,0 +1,123 @@
+:host { 
+  display: contents; 
+}
+.commande-dispo-commande-dispo {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.commande-dispo-group13923 {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-shrink: 1;
+  flex-direction: column;
+}
+.commande-dispo-text {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.commande-dispo-text3 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.commande-dispo-text4 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.commande-dispo-container {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.commande-dispo-text5 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.commande-dispo-navlink {
+  display: contents;
+}
+.commande-dispo-get-started {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  text-decoration: none;
+  background-color: #000000;
+}
+.commande-dispo-get-started:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.commande-dispo-text6 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media(max-width: 991px) {
+  .commande-dispo-group13923 {
+    flex: 1;
+    align-self: center;
+    align-items: center;
+    padding-bottom: 21px;
+    justify-content: center;
+  }
+}
+@media(max-width: 767px) {
+  .commande-dispo-group13923 {
+    padding-bottom: var(--dl-space-space-unit);
+  }
+}

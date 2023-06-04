@@ -1,0 +1,61 @@
+:host { 
+  display: contents; 
+}
+.form-add-livreur-form-add-livreur {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.form-add-livreur-form {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-fiveunits);
+  max-width: auto;
+  min-width: auto;
+  align-self: center;
+  max-height: auto;
+  min-height: auto;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-template-blue-bg);
+}
+.form-add-livreur-get-started {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.form-add-livreur-get-started:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.form-add-livreur-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media(max-width: 1200px) {
+  .form-add-livreur-form-add-livreur {
+    width: auto;
+    padding-left: 0px;
+  }
+}

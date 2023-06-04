@@ -1,0 +1,28 @@
+:host { 
+  display: contents; 
+}
+.register-btn-get-started {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.register-btn-get-started:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.register-btn-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+

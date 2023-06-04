@@ -1,0 +1,46 @@
+<div class="edit-profil1-edit-profil">
+  <form [formGroup]="editForm" class="edit-profil1-form">
+    <input
+      formControlName="nom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="prenom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="motdepasse"
+      type="password"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      formControlName="confmdp"
+      type="password"
+      [attr.placeholder]="textinput_placeholder3"
+      class="input"
+    />
+    <input
+      formControlName="adresse"
+      type="text"
+      [attr.placeholder]="textinput_placeholder4"
+      class="input"
+    />
+    <input
+      formControlName="email"
+      type="email"
+      [attr.placeholder]="textinput_placeholder5"
+      class="input"
+    />
+    <div (click)="onSubmitClient()" class="edit-profil1-get-started">
+      <span class="edit-profil1-text">
+        <span>Modifier</span>
+        <br />
+      </span>
+    </div>
+  </form>
+</div>

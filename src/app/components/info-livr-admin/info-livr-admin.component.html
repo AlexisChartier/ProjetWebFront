@@ -1,0 +1,28 @@
+<div *ngFor="let livreur of livreurs" class="info-livr-admin-info-livr-admin">
+  <div class="info-livr-admin-blog-post-card">
+    <div class="info-livr-admin-blog-post-card1">
+      <div class="info-livr-admin-container">
+        <div class="info-livr-admin-profile">
+          <img
+            [attr.alt]="image_alt"
+            [attr.src]="image_src"
+            image_src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTYyNjQzMTMwMw&amp;ixlib=rb-1.2.1&amp;h=1200"
+            class="info-livr-admin-image"
+          />
+          <span class="info-livr-admin-text">{{ livreur.nom_livreur }} {{livreur.prenom_livreur}}</span>
+        </div>
+      </div>
+      <div class="info-livr-admin-container1">
+        <span class="info-livr-admin-text1">{{ livreur.email }}</span>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/edit-livreur" class="info-livr-admin-navlink">
+    <div (click)="onClickUpdate(livreur.livreur_id)" class="info-livr-admin-get-started">
+      <span class="info-livr-admin-text2">{{ text }}</span>
+    </div>
+  </a>
+  <div (click)="onClickDelete(livreur.livreur_id)" class="info-livr-admin-get-started1">
+    <span class="info-livr-admin-text3">{{ text1 }}</span>
+  </div>
+</div>

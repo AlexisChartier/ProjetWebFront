@@ -1,0 +1,28 @@
+<div *ngFor="let client of clients" class="infos-cli-admin-infos-cli-admin">
+  <div class="infos-cli-admin-blog-post-card">
+    <div class="infos-cli-admin-blog-post-card1">
+      <div class="infos-cli-admin-container">
+        <div class="infos-cli-admin-profile">
+          <img
+            [attr.alt]="image_alt"
+            [attr.src]="image_src"
+            image_src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTYyNjQzMTMwMw&amp;ixlib=rb-1.2.1&amp;h=1200"
+            class="infos-cli-admin-image"
+          />
+          <span class="infos-cli-admin-text">{{ client.nom_client }} {{client.prenom_client}}</span>
+        </div>
+      </div>
+      <div class="infos-cli-admin-container1">
+        <span class="infos-cli-admin-text1">{{ client.email }}</span>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/modifier-profil" class="infos-cli-admin-navlink">
+    <div (click)="onClickUpdate(client.client_id)" class="infos-cli-admin-get-started">
+      <span class="infos-cli-admin-text2">{{ text }}</span>
+    </div>
+  </a>
+  <div (click)="onClickDelete(client.client_id)" class="infos-cli-admin-get-started1">
+    <span class="infos-cli-admin-text3">{{ text1 }}</span>
+  </div>
+</div>

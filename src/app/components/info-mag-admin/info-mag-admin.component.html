@@ -1,0 +1,25 @@
+<div *ngFor="let magasin of magasins" class="info-mag-admin-info-mag-admin" [ngClass]="rootClassName">
+  <div class="info-mag-admin-container">
+    <div class="info-mag-admin-blog-post-card">
+      <img
+        [attr.alt]="image_alt"
+        [attr.src]="image_src"
+        class="info-mag-admin-image"
+      />
+      <div class="info-mag-admin-container1">
+        <span class="info-mag-admin-text">{{ text2 }}</span>
+        <span class="info-mag-admin-text1">{{ magasin.nom_magasin }}</span>
+        <span class="info-mag-admin-text2">{{ magasin.adresse_magasin }}</span>
+        <div class="info-mag-admin-container2"></div>
+      </div>
+    </div>
+    <a routerLink="/edit-magasin" class="info-mag-admin-navlink">
+      <div (click)="onClickUpdate(magasin.magasin_id)" class="info-mag-admin-get-started">
+        <span class="info-mag-admin-text4">{{ text }}</span>
+      </div>
+    </a>
+    <div (click)="onClickDelete(magasin.magasin_id)" class="info-mag-admin-get-started1">
+      <span class="info-mag-admin-text5">{{ text1 }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="form-add-livreur-form-add-livreur">
+  <form [formGroup]="addLivreurForm" class="form-add-livreur-form">
+    <input
+      formControlName="nom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="prenom"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="motdepasse"
+      type="password"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      formControlName="confmdp"
+      type="password"
+      [attr.placeholder]="textinput_placeholder3"
+      class="input"
+    />
+    <input
+      formControlName="adresse"
+      type="text"
+      [attr.placeholder]="textinput_placeholder4"
+      class="input"
+    />
+    <input
+      formControlName="email"
+      type="email"
+      [attr.placeholder]="textinput_placeholder5"
+      class="input"
+    />
+    <div (click)="onClick()" class="form-add-livreur-get-started">
+      <span class="form-add-livreur-text">
+        <span>Ajouter Livreur</span>
+        <br />
+      </span>
+    </div>
+  </form>
+</div>

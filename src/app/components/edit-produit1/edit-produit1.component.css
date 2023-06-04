@@ -1,0 +1,69 @@
+:host { 
+  display: contents; 
+}
+.edit-produit1-edit-produit {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+.edit-produit1-form {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-fiveunits);
+  max-width: auto;
+  min-width: auto;
+  align-self: center;
+  max-height: auto;
+  min-height: auto;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-gray-white);
+}
+.edit-produit1-get-started {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  background-color: #000000;
+}
+.edit-produit1-get-started:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.edit-produit1-text1 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media(max-width: 1200px) {
+  .edit-produit1-edit-produit {
+    flex: 1;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .edit-produit1-form {
+    align-self: center;
+  }
+  .edit-produit1-text1 {
+    font-size: 18px;
+  }
+}

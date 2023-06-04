@@ -1,0 +1,28 @@
+:host { 
+  display: contents; 
+}
+.order-btn2-order-btn2 {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  text-decoration: none;
+  background-color: #000000;
+}
+.order-btn2-order-btn2:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.order-btn2-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}

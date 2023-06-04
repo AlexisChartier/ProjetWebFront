@@ -1,0 +1,21 @@
+<div class="login-form-container">
+  <form [formGroup]="loginForm" autocomplete="given-name" class="login-form-login-form" (ngSubmit)="onSubmit()">
+    <input
+      formControlName="email"
+      type="text"
+      id="login"
+      [attr.placeholder]="textinput_placeholder"
+      class="login-form-textinput input"
+    />
+    <input
+      formControlName="password"
+      type="password"
+      id="password"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <button name="Connexion" type="submit" class="login-form-button button">
+      {{ button }}
+    </button>
+  </form>
+</div>

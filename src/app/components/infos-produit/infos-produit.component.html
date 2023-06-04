@@ -1,0 +1,72 @@
+<div *ngFor="let produit of produits" class="infos-produit-infos-produit">
+  <div class="infos-produit-frame3">
+    <span class="infos-produit-text"><span>{{produit.nom_produit}}</span></span>
+    <div class="infos-produit-container">
+      <span class="infos-produit-text02">{{ produit.description_produit }}</span>
+      <img
+        [attr.alt]="Rectangle1_alt"
+        [attr.src]="Rectangle1_src"
+        class="infos-produit-rectangle1"
+      />
+    </div>
+    <span class="infos-produit-text03"><span>{{produit.prix_produit}}</span></span>
+    <div class="infos-produit-container1">
+      <div class="infos-produit-get-started">
+        <span class="infos-produit-text05">
+          <span>Ajouter au panier</span>
+          <br />
+        </span>
+      </div>
+      <div data-thq="thq-dropdown" class="infos-produit-thq-dropdown list-item">
+        <div
+          data-thq="thq-dropdown-toggle"
+          class="infos-produit-dropdown-toggle"
+        >
+          <span class="infos-produit-text08">{{ text1 }}</span>
+          <div
+            data-thq="thq-dropdown-arrow"
+            class="infos-produit-dropdown-arrow"
+          >
+            <svg viewBox="0 0 1024 1024" class="infos-produit-icon">
+              <path d="M426 726v-428l214 214z"></path>
+            </svg>
+          </div>
+        </div>
+        <ul data-thq="thq-dropdown-list" class="infos-produit-dropdown-list">
+          <li data-thq="thq-dropdown" class="infos-produit-dropdown list-item">
+            <div
+              data-thq="thq-dropdown-toggle"
+              class="infos-produit-dropdown-toggle1"
+            >
+              <span class="infos-produit-text09">{{ text2 }}</span>
+            </div>
+          </li>
+          <li data-thq="thq-dropdown" class="infos-produit-dropdown1 list-item">
+            <div
+              data-thq="thq-dropdown-toggle"
+              class="infos-produit-dropdown-toggle2"
+            >
+              <span class="infos-produit-text10">{{ text3 }}</span>
+            </div>
+          </li>
+          <li data-thq="thq-dropdown" class="infos-produit-dropdown2 list-item">
+            <div
+              data-thq="thq-dropdown-toggle"
+              class="infos-produit-dropdown-toggle3"
+            >
+              <span class="infos-produit-text11">{{ text4 }}</span>
+            </div>
+          </li>
+          <li data-thq="thq-dropdown" class="infos-produit-dropdown3 list-item">
+            <div
+              data-thq="thq-dropdown-toggle"
+              class="infos-produit-dropdown-toggle4"
+            >
+              <span class="infos-produit-text12">{{ text5 }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

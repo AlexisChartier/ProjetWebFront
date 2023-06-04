@@ -1,0 +1,28 @@
+<div *ngFor="let vendeur of vendeurs" class="info-vend-admin-info-vend-admin">
+  <div class="info-vend-admin-blog-post-card">
+    <div class="info-vend-admin-blog-post-card1">
+      <div class="info-vend-admin-container">
+        <div class="info-vend-admin-profile">
+          <img
+            [attr.alt]="image_alt"
+            [attr.src]="image_src"
+            image_src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fG1hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTYyNjQzMTMwMw&amp;ixlib=rb-1.2.1&amp;h=1200"
+            class="info-vend-admin-image"
+          />
+          <span class="info-vend-admin-text">{{ vendeur.nom_vendeur }} {{vendeur.prenom_vendeur}}</span>
+        </div>
+      </div>
+      <div class="info-vend-admin-container1">
+        <span class="info-vend-admin-text1">{{ vendeur.email }}</span>
+      </div>
+    </div>
+  </div>
+  <a routerLink="/modifier-profil1" class="info-vend-admin-navlink">
+    <div (click)="onClickUpdate(vendeur.vendeur_id)" class="info-vend-admin-get-started">
+      <span class="info-vend-admin-text2">{{ text }}</span>
+    </div>
+  </a>
+  <div (click)="onClickDelete(vendeur.vendeur_id)" class="info-vend-admin-get-started1">
+    <span class="info-vend-admin-text3">{{ text1 }}</span>
+  </div>
+</div>

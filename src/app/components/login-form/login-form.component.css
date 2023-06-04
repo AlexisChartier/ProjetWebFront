@@ -1,0 +1,36 @@
+:host {
+  display: contents;
+}
+.login-form-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.login-form-login-form {
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: 250px;
+  align-items: center;
+  margin-bottom: 0px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-form-textinput {
+  margin-top: var(--dl-space-space-fourunits);
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.login-form-button {
+  margin-top: var(--dl-space-space-unit);
+}
+@media(max-width: 767px) {
+  .login-form-login-form {
+    width: auto;
+  }
+}
+@media(max-width: 479px) {
+  .login-form-login-form {
+    width: auto;
+    height: auto;
+  }
+}

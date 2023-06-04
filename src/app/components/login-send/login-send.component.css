@@ -1,0 +1,29 @@
+:host { 
+  display: contents; 
+}
+.login-send-login-send {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  margin-top: var(--dl-space-space-threeunits);
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 18px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 18px;
+  text-decoration: none;
+  background-color: #000000;
+}
+.login-send-login-send:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.login-send-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}

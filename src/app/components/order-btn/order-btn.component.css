@@ -1,0 +1,36 @@
+:host { 
+  display: contents; 
+}
+.order-btn-container {
+  display: flex;
+  position: relative;
+}
+.order-btn-order-btn {
+  gap: 27.61350440979004px;
+  flex: 1;
+  width: auto;
+  display: flex;
+  padding: 22.090803146362305px 44.18160629272461px;
+  font-size: 32px;
+  align-self: center;
+  align-items: flex-start;
+  border-radius: 44.18160629272461px;
+  margin-bottom: var(--dl-space-space-threeunits);
+  padding-bottom: 22.090803146362305px 44.18160629272461px;
+  background-color: var(--dl-color-template-blue-bg);
+}
+.order-btn-text {
+  color: rgb(0, 0, 0);
+  height: auto;
+  font-size: 32px;
+  font-style: normal;
+  text-align: left;
+  font-family: Oxygen;
+  font-weight: 700;
+  line-height: normal;
+}
+.order-btn-text1 {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Karla;
+}

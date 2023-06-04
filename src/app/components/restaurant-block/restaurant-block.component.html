@@ -1,0 +1,12 @@
+<div  *ngFor="let magasin of magasins" (click)="onClick(magasin.magasin_id)" class="restaurant-block-restaurant-block">
+  <span class="restaurant-block-text">
+    <span>{{magasin.nom_magasin}}</span>
+    <br />
+  </span>
+  <span class="restaurant-block-text3">{{ magasin.adresse_magasin }}</span>
+  <img
+    [attr.alt]="Subtract_alt"
+    [attr.src]="Subtract_src"
+    class="restaurant-block-subtract"
+  />
+</div>

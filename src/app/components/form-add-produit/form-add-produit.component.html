@@ -1,0 +1,40 @@
+<div class="form-add-produit-form-add-produit">
+  <form [formGroup]="addProduitForm" class="form-add-produit-form">
+    <input
+      formControlName="nomProduit"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="Description"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      formControlName="prix"
+      type="text"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <input
+      formControlName="idMagasin"
+      type="text"
+      [attr.placeholder]="textinput_placeholder4"
+      class="input"
+    />
+    <input
+      type="file"
+      [attr.placeholder]="textinput_placeholder3"
+      class="form-add-produit-textinput3 input"
+    />
+
+    <div (click)="onClick()" class="form-add-produit-get-started">
+      <span class="form-add-produit-text">
+        <span>Ajouter Produit</span>
+        <br />
+      </span>
+    </div>
+  </form>
+</div>

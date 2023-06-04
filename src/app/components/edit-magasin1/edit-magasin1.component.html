@@ -1,0 +1,33 @@
+<div class="edit-magasin1-edit-magasin">
+  <form [formGroup]="EditMagasinForm" class="edit-magasin1-form">
+    <input
+      formControlName="nomMagasin"
+      type="text"
+      [attr.placeholder]="textinput_placeholder"
+      class="input"
+    />
+    <input
+      formControlName="adresse"
+      type="text"
+      [attr.placeholder]="textinput_placeholder1"
+      class="input"
+    />
+    <input
+      type="file"
+      [attr.placeholder]="textinput_placeholder2"
+      class="input"
+    />
+    <label class="edit-magasin1-text">{{ text }}</label>
+    <textarea
+      formControlName="Description"
+      [attr.placeholder]="textarea_placeholder"
+      class="edit-magasin1-textarea textarea"
+    ></textarea>
+    <div (click)="onClick()" class="edit-magasin1-get-started">
+      <span class="edit-magasin1-text1">
+        <span>Modifier</span>
+        <br />
+      </span>
+    </div>
+  </form>
+</div>

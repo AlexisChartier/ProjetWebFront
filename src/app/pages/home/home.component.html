@@ -1,0 +1,78 @@
+<div class="home-container">
+  <section class="home-section1">
+    <div class="home-container1">
+      <a transitionTo="/login" class="home-navlink">
+        <login-btn
+          rootClassName="login-btn-root-class-name"
+          class="home-component"
+        ></login-btn>
+      </a>
+      <a transitionTo="/register-hub" class="home-navlink1">
+        <register-btn
+          rootClassName="register-btn-root-class-name"
+          class="home-component1"
+        ></register-btn>
+      </a>
+    </div>
+    <header class="home-title">
+      <h1 class="home-text">DeliveryGo</h1>
+      <p class="home-text01">Plateforme de livraison de biens à domicile</p>
+    </header>
+    <div class="home-dashboard-preview">
+      <div class="home-outline">
+        <img
+          alt="pastedImage"
+          src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE2fHxmb29kfGVufDB8fHx8MTY4NDc0MjM0MXww&amp;ixlib=rb-4.0.3&amp;w=1400"
+          loading="lazy"
+          class="home-image"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="home-features">
+    <div class="home-title1">
+      <span class="home-text02">Notre offre</span>
+      <span class="home-text03">Voici ce que permet notre plateforme</span>
+    </div>
+    <div class="home-cards">
+      <div class="home-container2">
+        <div class="home-client card">
+          <svg viewBox="0 0 1024 1024" class="home-icon">
+            <path
+              d="M512 128c0 0-263.936 227.84-411.435 351.232-8.661 7.851-15.232 19.285-15.232 32.768 0 23.595 19.072 42.667 42.667 42.667h85.333v298.667c0 23.595 19.072 42.667 42.667 42.667h128c23.595 0 42.667-19.115 42.667-42.667v-170.667h170.667v170.667c0 23.552 19.072 42.667 42.667 42.667h128c23.595 0 42.667-19.072 42.667-42.667v-298.667h85.333c23.595 0 42.667-19.072 42.667-42.667 0-13.483-6.571-24.917-16.341-32.768-146.475-123.392-410.325-351.232-410.325-351.232z"
+            ></path>
+          </svg>
+          <span class="home-text04">Client</span>
+          <span class="home-text05">
+            Livraison à domicile de biens parmi les magasins dans votre secteur
+          </span>
+        </div>
+        <div class="home-livreur card">
+          <svg viewBox="0 0 1024 1024" class="home-icon2">
+            <path
+              d="M640 640h-554.667v-469.333h554.667v170.667zM725.333 384h110.336l102.997 102.997v153.003h-213.333zM298.667 789.333c0 17.664-7.125 33.621-18.731 45.269s-27.605 18.731-45.269 18.731-33.621-7.125-45.269-18.731-18.731-27.605-18.731-45.269 7.125-33.621 18.731-45.269 27.605-18.731 45.269-18.731 33.621 7.125 45.269 18.731 18.731 27.605 18.731 45.269zM938.667 789.333c0-22.912-5.163-44.587-14.379-64h57.045c23.552 0 42.667-19.115 42.667-42.667v-213.333c0-10.923-4.181-21.845-12.501-30.165l-128-128c-7.723-7.723-18.389-12.501-30.165-12.501h-128v-170.667c0-23.552-19.115-42.667-42.667-42.667h-640c-23.552 0-42.667 19.115-42.667 42.667v554.667c0 23.552 19.115 42.667 42.667 42.667h57.045c-9.216 19.413-14.379 41.088-14.379 64 0 41.216 16.768 78.635 43.733 105.6s64.384 43.733 105.6 43.733 78.635-16.768 105.6-43.733 43.733-64.384 43.733-105.6c0-22.912-5.163-44.587-14.379-64h284.757c-9.216 19.413-14.379 41.088-14.379 64 0 41.216 16.768 78.635 43.733 105.6s64.384 43.733 105.6 43.733 78.635-16.768 105.6-43.733 43.733-64.384 43.733-105.6zM853.333 789.333c0 17.664-7.125 33.621-18.731 45.269s-27.605 18.731-45.269 18.731-33.621-7.125-45.269-18.731-18.731-27.605-18.731-45.269 7.125-33.621 18.731-45.269 27.605-18.731 45.269-18.731 33.621 7.125 45.269 18.731 18.731 27.605 18.731 45.269z"
+            ></path>
+          </svg>
+          <span class="home-text06">Livreur</span>
+          <span class="home-text07">
+            Commencez à travailler dès maintenant via notre plateforme
+          </span>
+        </div>
+      </div>
+      <div class="home-vendeur">
+        <div class="home-analyze card">
+          <svg viewBox="0 0 1024 1024" class="home-icon4">
+            <path
+              d="M512 598q108 0 225 47t117 123v86h-684v-86q0-76 117-123t225-47zM512 512q-70 0-120-50t-50-120 50-121 120-51 120 51 50 121-50 120-120 50z"
+            ></path>
+          </svg>
+          <span class="home-text08">Vendeur</span>
+          <span class="home-text09">
+            Gérez l&apos;offre proposée sur la plateforme
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</div>

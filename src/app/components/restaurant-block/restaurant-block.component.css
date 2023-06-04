@@ -1,0 +1,64 @@
+:host {
+  display: contents;
+}
+.restaurant-block-restaurant-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: center;
+  margin-top: var(--dl-space-space-threeunits);
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.restaurant-block-text {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.restaurant-block-text3 {
+  color: rgb(30, 30, 30);
+  height: auto;
+  font-size: 24px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.restaurant-block-subtract {
+  flex: 1;
+  width: 90%;
+  height: auto;
+  align-self: center;
+  padding-left: 00px;
+}
+@media(max-width: 1200px) {
+  .restaurant-block-subtract {
+    align-self: center;
+    padding-left: 0px;
+  }
+}
+@media(max-width: 991px) {
+  .restaurant-block-restaurant-block {
+    flex: 1;
+    align-self: center;
+    padding-bottom: var(--dl-space-space-sixunits);
+  }
+  .restaurant-block-subtract {
+    height: 70%;
+    align-self: center;
+    max-height: 70%;
+  }
+}
