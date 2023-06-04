@@ -3,8 +3,8 @@
   "author": "teleportHQ",
   "version": "0.0.0",
   "scripts": {
-    "start": "npm install",
-    "build": "npm run build"
+    "start": "npm install -g @angular/cli",
+    "build": "ng serve deliverygo"
   },
   "private": true,
   "dependencies": {
