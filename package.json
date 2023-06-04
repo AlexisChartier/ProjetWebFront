@@ -3,9 +3,8 @@
   "author": "teleportHQ",
   "version": "0.0.0",
   "scripts": {
-    "start": "npm start ",
-    "build": "ng build --aot",
-    "watch": "ng build --watch --configuration development"
+    "start": "node server.js ",
+    "build": "npm run build"
   },
   "private": true,
   "dependencies": {
