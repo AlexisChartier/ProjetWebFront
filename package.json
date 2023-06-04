@@ -3,7 +3,7 @@
   "author": "teleportHQ",
   "version": "0.0.0",
   "scripts": {
-    "start": "npm install -g @angular/cli",
+    "start": "sudo npm install -g @angular/cli",
     "build": "ng serve deliverygo"
   },
   "private": true,
