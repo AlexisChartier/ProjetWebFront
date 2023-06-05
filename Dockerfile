@@ -1,16 +1,29 @@
-FROM node:14.0.0-alpine as node-angular-cli
+# Utiliser une image de base contenant Node.js pour construire l'application Angular
+FROM node:14 as builder
 
-# Building Angular app
-WORKDIR /src/app
-COPY package.json /app
+# Définir le répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copier le package.json et le package-lock.json dans le conteneur
+COPY package*.json ./
+
+# Installer les dépendances du projet
 RUN npm install
-COPY . /app
 
-# Creating bundle
-RUN npm run build -- --prod
+# Copier tous les fichiers de l'application dans le conteneur
+COPY . .
 
-WORKDIR /app/dist/browser
+# Compiler l'application Angular
+RUN npm run build --prod
+
+# Utiliser une image de base légère pour exécuter l'application Angular compilée
+FROM nginx:latest
+
+# Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
+COPY --from=builder /app/dist/ /usr/share/nginx/html
+
+# Exposer le port 80 pour permettre l'accès au site web
 EXPOSE 80
-ENV PORT 80
-RUN npm install http-server -g
-CMD [ "http-server" ]
+
+# Démarrer le serveur Nginx lors du lancement du conteneur
+CMD ["nginx", "-g", "daemon off;"]
