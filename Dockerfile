@@ -4,15 +4,25 @@
 FROM node:14 as builder
 
 # Définir le répertoire de travail dans le conteneur
-WORKDIR /src/app
+WORKDIR /app
+# Copier le package.json et le package-lock.json dans le conteneur
+
+# Installer les dépendances du projet
 
 
-
+# Copier tous les fichiers de l'application dans le conteneur
 COPY . .
-
-RUN npm install typescript@">=4.8.2 and <4.9.0" --save-prod
 RUN npm install
+# Compiler l'application Angular
+RUN npm run build --prod
 
-CMD ["npm", "run", "serve"]
+# Utiliser une image de base légère pour exécuter l'application Angular compilée
+FROM nginx:alpine
+# Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
+COPY --from=node /app/dist /usr/share/nginx/html
 
-EXPOSE 8080
+# Exposer le port 80 pour permettre l'accès au site web
+EXPOSE 80
+
+# Démarrer le serveur Nginx lors du lancement du conteneur
+CMD ["nginx", "-g", "daemon off;"]
