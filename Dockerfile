@@ -19,7 +19,7 @@ RUN npm run build --prod
 # Utiliser une image de base légère pour exécuter l'application Angular compilée
 FROM nginx:alpine
 # Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
-COPY --from=node /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 # Exposer le port 80 pour permettre l'accès au site web
 EXPOSE 80
