@@ -10,11 +10,8 @@ const distPath = path.join(__dirname, 'dist/teleport-project-template-angular');
 app.use(express.static(distPath));
 
 // Toutes les routes mènent à l'index.html pour la gestion du routage côté client
-app.get('', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
-});
-app.get('/login',(req, res) => {
-  res.sendFile(path.join(distPath, '450.js'));
 });
 
 // Démarrer le serveur sur le port 8080
