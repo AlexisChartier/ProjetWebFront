@@ -18,4 +18,4 @@ RUN npm build
 EXPOSE 8080
 
 # Démarrer le serveur HTTP lors du lancement du conteneur
-CMD ["node", "dist/teleport-project-template-angular"]
+CMD ["node", "dist/teleport-project-template-angular/main.js"]
