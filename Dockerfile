@@ -2,7 +2,7 @@
 FROM node:14 as builder
 
 # Définir le répertoire de travail dans le conteneur
-WORKDIR /app
+
 
 # Copier le package.json et le package-lock.json dans le conteneur
 COPY package*.json ./
@@ -22,7 +22,7 @@ RUN npm run build --prod
 FROM nginx:latest
 
 # Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
-COPY --from=builder /app/dist/ /usr/share/nginx/html
+COPY --from=builder /dist /nginx/html
 
 # Exposer le port 80 pour permettre l'accès au site web
 EXPOSE 80
