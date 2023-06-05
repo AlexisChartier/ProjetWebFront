@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 export const STRINGS = {
   apiUrl: 'https://apiback-ogcv.onrender.com',
-  serverUrl: 'http://localhost:4200'
+  serverUrl: 'https://deli-b1cx.onrender.com/'
 };
 
 @NgModule({
