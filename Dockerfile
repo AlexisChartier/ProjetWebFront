@@ -23,7 +23,7 @@ RUN npm run build --prod
 FROM nginx:latest
 
 # Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
-COPY --from=builder /dist /nginx/html
+COPY --from=builder /src/app/dist /nginx/html
 
 # Exposer le port 80 pour permettre l'accès au site web
 EXPOSE 80
