@@ -17,7 +17,7 @@ RUN npm install
 RUN npm run build --prod
 
 # Utiliser une image de base légère pour exécuter l'application Angular compilée
-FROM nginx:alpine
+FROM nginx:latest
 # Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
 COPY --from=build /app/dist /usr/share/nginx/html
 
