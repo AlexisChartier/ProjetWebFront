@@ -1,4 +1,4 @@
-RUN nginx -t
+
 
 # Utiliser une image de base contenant Node.js pour construire l'application Angular
 FROM node:14 as builder
@@ -23,7 +23,7 @@ RUN npm run build --prod
 
 # Utiliser une image de base légère pour exécuter l'application Angular compilée
 FROM nginx:latest
-
+RUN nginx -t
 # Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
 COPY --from=builder /src/app/dist /nginx/html
 
