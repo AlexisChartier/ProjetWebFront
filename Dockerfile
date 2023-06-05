@@ -7,6 +7,8 @@ WORKDIR /app
 # Copier le package.json et le package-lock.json dans le conteneur
 COPY package*.json ./
 
+RUN npm install typescript@">=4.8.2 and <4.9.0" --save-dev
+
 # Installer les dépendances du projet
 RUN npm install
 
