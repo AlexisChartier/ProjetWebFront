@@ -9,6 +9,7 @@ COPY package*.json ./
 
 RUN npm install typescript@">=4.8.2 and <4.9.0" --save-dev
 
+WORKDIR /
 # Installer les dépendances du projet
 RUN npm install
 
