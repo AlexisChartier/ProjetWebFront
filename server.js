@@ -11,7 +11,7 @@ app.use(express.static(distPath));
 
 // Toutes les routes mènent à l'index.html pour la gestion du routage côté client
 app.get('', (req, res) => {
-  res.sendFile(path.join(distPath, 'index.html'));
+  res.sendFile(path.join(distPath, 'teleport-project-template-angular/index.html'));
 });
 
 // Démarrer le serveur sur le port 8080
