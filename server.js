@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 // Définir le chemin vers le répertoire de build de l'application Angular
-const distPath = path.join(__dirname, 'dist');
+const distPath = path.join(__dirname, 'dist/teleport-project-template-angular');
 
 // Définir le dossier de fichiers statiques
 app.use(express.static(distPath));
