@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm install typescript@">=4.8.2 and <4.9.0" --save-prod
-RUN ng build
+RUN npm build
 
 # Installer le serveur HTTP simple
 RUN npm install -g http-server
