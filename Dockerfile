@@ -1,7 +1,7 @@
 FROM node:14.0.0-alpine as node-angular-cli
 
 # Building Angular app
-WORKDIR /app
+WORKDIR /src/app
 COPY package.json /app
 RUN npm install
 COPY . /app
