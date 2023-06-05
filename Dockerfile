@@ -17,6 +17,7 @@ RUN npm install
 COPY . .
 
 # Compiler l'application Angular
+RUN npm install
 RUN npm run build --prod
 
 # Utiliser une image de base légère pour exécuter l'application Angular compilée
