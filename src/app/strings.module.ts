@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 export const STRINGS = {
-  apiUrl: 'http://localhost:8080',
+  apiUrl: 'https://apiback-ogcv.onrender.com',
   serverUrl: 'http://localhost:4200'
 };
 

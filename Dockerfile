@@ -1,8 +1,16 @@
-FROM nginx:1.17.1-alpine
+FROM node:14.0.0-alpine as node-angular-cli
+
+# Building Angular app
 WORKDIR /app
-COPY package*.json ./
+COPY package.json /app
 RUN npm install
-COPY . .
-RUN npm run build
-EXPOSE 4200
-CMD ["npm", "start"]
+COPY . /app
+
+# Creating bundle
+RUN npm run build -- --prod
+
+WORKDIR /app/dist/browser
+EXPOSE 80
+ENV PORT 80
+RUN npm install http-server -g
+CMD [ "http-server" ]
