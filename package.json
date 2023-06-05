@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm install",
-    "build": "npm install typescript@\">=4.8.2 and <4.9.0\" --save-dev;ng build",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,

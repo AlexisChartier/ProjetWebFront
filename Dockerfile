@@ -17,7 +17,6 @@ RUN npm install
 COPY . .
 
 # Compiler l'application Angular
-RUN npm install typescript@">=4.8.2 and <4.9.0" --save-dev
 RUN npm run build --prod
 
 # Utiliser une image de base légère pour exécuter l'application Angular compilée
