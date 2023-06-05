@@ -5,21 +5,16 @@ FROM node:14 as builder
 
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /app
-# Copier le package.json et le package-lock.json dans le conteneur
 
-# Installer les dépendances du projet
+RUN npm install -g @angular/cli
 
-
-# Copier tous les fichiers de l'application dans le conteneur
-COPY . .
+COPY ./package.json .
 RUN npm install
-# Compiler l'application Angular
-RUN npm run build --prod
+COPY . .
+RUN ng build
 
-# Utiliser une image de base légère pour exécuter l'application Angular compilée
-FROM nginx:latest
-# Copier les fichiers de l'application compilée dans le répertoire de contenu Nginx
-COPY --from=build /app/dist /usr/share/nginx/html
+FROM nginx as runtime
+COPY --from=build /app/dist/teleport-project-template-angular /usr/share/nginx/html
 
 # Exposer le port 80 pour permettre l'accès au site web
 EXPOSE 80
