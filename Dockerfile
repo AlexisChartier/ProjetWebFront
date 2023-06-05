@@ -14,7 +14,7 @@ COPY . .
 RUN ng build
 
 FROM nginx as runtime
-COPY --from=build /app/dist/teleport-project-template-angular /usr/share/nginx/html
+COPY --from=builder /app/dist/teleport-project-template-angular /usr/share/nginx/html
 
 # Exposer le port 80 pour permettre l'accès au site web
 EXPOSE 80
